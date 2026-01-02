@@ -5,155 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tanvi Mane | Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
   <!-- NAVBAR -->
   <nav>
-    <h2>Tanvi Mane</h2>
+    <h2 class="logo">Tanvi Mane</h2>
     <ul>
+      <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Hi, I’m Tanvi</h1>
-      <p>
+  <!-- HERO SECTION (Like the screenshot) -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h3 class="hero-subtitle">Hey! I'm</h3>
+      <h1 class="hero-title">Tanvi Mane</h1>
+      <h2 class="hero-role">Data Scientist & Analyst</h2>
+      <p class="hero-description">
         Statistics & Data Science student at Rutgers University passionate about
-        data analysis, research, and building impactful data-driven solutions.
+        transforming raw data into meaningful insights and building data-driven solutions.
       </p>
-      <a href="#projects" class="btn">View My Projects</a>
+      
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-secondary">Contact Me</a>
+      </div>
+      
+      <div class="hero-social">
+        <a href="mailto:tm1049@scarletmail.rutgers.edu" class="social-link">
+          <i class="fas fa-envelope"></i>
+          <span>Email</span>
+        </a>
+        <a href="https://linkedin.com/in/tanvi-mane-61283a288" target="_blank" class="social-link">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/tmane333" target="_blank" class="social-link">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
     </div>
-    <img src="assets/profile.jpg" alt="Tanvi Mane">
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I’m a Statistics and Data Science student at Rutgers University–New Brunswick
-      with a minor in Computer Science. I enjoy working with data from collection
-      and cleaning to modeling, visualization, and interpretation.
-    </p>
-    <p>
-      My experience spans academic research, public health bioinformatics, and
-      business analytics. I’m especially interested in applying statistical
-      methods and programming to real-world problems.
-    </p>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section dark">
-    <h2>Projects</h2>
-
-    <div class="project">
-      <h3>Bayesian Hybrid Design R Shiny Application</h3>
-      <p class="tech">R · R Shiny · Bayesian Statistics</p>
-      <p>
-        Developed an interactive R Shiny application to support Bayesian Hybrid
-        Design methods used in pharmaceutical research. Implemented advanced
-        priors such as Dynamic Power Prior (DPP) and SAM Prior to benchmark study
-        designs and support go/no-go decision making.
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>Statistics in Biomedical Research – Online Textbook</h3>
-      <p class="tech">R · R Markdown</p>
-      <p>
-        Co-authored and formatted an online textbook using R Markdown to present
-        statistical concepts for biomedical research. Focused on clarity,
-        reproducibility, and professional publication-ready formatting.
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>Anthropology Fossil Data Analysis</h3>
-      <p class="tech">R · R Shiny · Data Visualization</p>
-      <p>
-        Analyzed fossil structure datasets to identify time-series trends related
-        to morphological change. Built an R Shiny application to allow researchers
-        to explore and visualize data interactively.
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>Public Health Bioinformatics Pipeline</h3>
-      <p class="tech">Python · R · Linux</p>
-      <p>
-        Optimized and executed the CDC MIRA-NF bioinformatics pipeline to process
-        RSV samples for the New Jersey Department of Health, generating curated
-        consensus sequences for public health surveillance.
-      </p>
-    </div>
-
-    <div class="project">
-      <h3>Business Analytics Dashboards</h3>
-      <p class="tech">SQL · Google Looker Studio</p>
-      <p>
-        Designed interactive dashboards using SQL and Looker Studio to visualize
-        business and application trends, translating raw data into actionable
-        insights for stakeholders.
-      </p>
-    </div>
-
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience" class="section">
-    <h2>Experience</h2>
-
-    <div class="experience">
-      <h3>Anthropology Data Science Research Assistant</h3>
-      <span>Rutgers University | 2025 – Present</span>
-      <p>
-        Conducted statistical analysis and built interactive tools to support
-        anthropological research using fossil datasets.
-      </p>
-    </div>
-
-    <div class="experience">
-      <h3>Bioinformatics Intern</h3>
-      <span>New Jersey Department of Health | Summer 2025</span>
-      <p>
-        Automated and optimized RSV genomic pipelines to support public health
-        reporting and surveillance.
-      </p>
-    </div>
-
-    <div class="experience">
-      <h3>Business Data Analyst Intern</h3>
-      <span>Lambent Data Inc. | Summer 2025</span>
-      <p>
-        Built dashboards and visual analytics tools using SQL and Looker Studio
-        to support business decision-making.
-      </p>
+    
+    <div class="hero-image">
+      <!-- Your profile image will go here -->
+      <div class="image-placeholder">
+        <i class="fas fa-user-circle"></i>
+        <p>Your Photo</p>
+      </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section dark">
-    <h2>Contact</h2>
-    <p>
-      Feel free to reach out if you’d like to collaborate, discuss opportunities,
-      or learn more about my work.
-    </p>
-    <p>
-      📧 tm1049@scarletmail.rutgers.edu<br/>
-      🔗 <a href="https://linkedin.com/in/tanvi-mane-61283a288">LinkedIn</a><br/>
-      💻 <a href="https://github.com/tmane333">GitHub</a>
-    </p>
-  </section>
-
-  <footer>
-    © 2026 Tanvi Mane
-  </footer>
+  <!-- The rest of your sections (About, Skills, Projects, Experience, Contact) -->
+  <!-- [Keep all the existing sections from the previous version here] -->
 
   <script src="script.js"></script>
 </body>
